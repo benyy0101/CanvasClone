@@ -1,0 +1,593 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-06-05T07:27:35.314Z",
+    "__export_source": "insomnia.desktop.app:v2022.3.0",
+    "resources": [
+        {
+            "_id": "req_cc3e26b482cf497cb9b8e3fd5e3bf122",
+            "parentId": "fld_22f71e367e904b1f83e8036aa093f460",
+            "modified": 1654408980128,
+            "created": 1654372155110,
+            "url": "http://localhost:8000/users",
+            "name": "Create user",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"John Doe\",\n\t\"email\": \"doej@oregonstate.edu\",\n\t\"password\": \"hunter2\",\n\t\"role\": \"student\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_e3e6ea30da2a40c89ee2806eb4d44685"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDM1NjQsImV4cCI6MTY1NDQ4OTk2NH0.rCNL_pOP_CBiDrJvPr14o3nO27Ts9AUf2ERtysIBQ9Q"
+            },
+            "metaSortKey": -1654403872670,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_22f71e367e904b1f83e8036aa093f460",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654405497873,
+            "created": 1654405497873,
+            "name": "Users",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1654405497873,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_582730a35e7149b684eb7539935c56f8",
+            "parentId": null,
+            "modified": 1654408799517,
+            "created": 1654372150149,
+            "name": "Tarpaulin",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_0ef5a8388c4549929cc7118b3f05c4d7",
+            "parentId": "fld_22f71e367e904b1f83e8036aa093f460",
+            "modified": 1654412819731,
+            "created": 1654403450313,
+            "url": "http://localhost:8000/users/login",
+            "name": "Login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"email\": \"zuul@oregonstate.edu\",\n\t\t\"password\": \"hunter2\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_10e339c8a45b4e41973a4c1029d5a6c3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1654403872645,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_754342ae95e544b786df9b902c166c58",
+            "parentId": "fld_22f71e367e904b1f83e8036aa093f460",
+            "modified": 1654413001545,
+            "created": 1654403872620,
+            "url": "http://localhost:8000/users/629c32bbb6c1cdc32e4e407a",
+            "name": "Get user info",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDM1NjQsImV4cCI6MTY1NDQ4OTk2NH0.rCNL_pOP_CBiDrJvPr14o3nO27Ts9AUf2ERtysIBQ9Q"
+            },
+            "metaSortKey": -1654403872620,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_819b2b6853a04d419a6755ebbc4338c8",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654413947366,
+            "created": 1654406204943,
+            "url": "http://localhost:8000/courses",
+            "name": "Create course",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"subject\": \"CS 999\",\n\t\"number\": 5,\n\t\"title\": \"999\",\n\t\"term\": \"Fall\",\n\t\"instructorId\": 1,\n\t\"studentId\": []\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_3dd438e8735349caadf3a0d3eeb26199"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654405675860,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654405668725,
+            "created": 1654405661484,
+            "name": "Courses",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1654405497823,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_0a1c0f38b91f4ffd8ecd39bc0c4c8059",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654411684086,
+            "created": 1654405675810,
+            "url": "http://localhost:8000/courses?page=1",
+            "name": "Get all courses",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654405675810,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8560b3a7b9764d25bd96eaea231861a4",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654413952035,
+            "created": 1654407112259,
+            "url": "http://localhost:8000/courses/629c5a7cabe9fb46dd1f86f7",
+            "name": "Get course info",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654405675710,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b90bd0bac2134fcead21a2bf3fcbd4db",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654407503290,
+            "created": 1654407234639,
+            "url": "http://localhost:8000/courses/629c3f951c7570699662969d",
+            "name": "Update course",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"subject\": \"CS 000\",\n\t\"number\": 5,\n\t\"title\": \"999\",\n\t\"term\": \"Spring\",\n\t\"instructorId\": 1\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_38402f353c9545ca85e94e89d0a185c6"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654405675660,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f0604d71005b4a399c2a629fc53c8762",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654407595398,
+            "created": 1654407492247,
+            "url": "http://localhost:8000/courses/629c3f951c7570699662969d",
+            "name": "Delete course",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654405675610,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_544e22f399b445888eee2aeccd4d868a",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654413968024,
+            "created": 1654408012698,
+            "url": "http://localhost:8000/courses/629c5a7cabe9fb46dd1f86f7/students",
+            "name": "Get course enrollment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654405675560,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d325d5eb99704c22b6382029817ea87a",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654413986036,
+            "created": 1654408133764,
+            "url": "http://localhost:8000/courses/629c5a7cabe9fb46dd1f86f7/students",
+            "name": "Update course enrollment",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"add\": [\n\t\t\"629c4f20f9594f4782a6ce90\",\n\t\t\"629c4f20f9594f4782a6ce91\",\n\t\t\"629c4f20f9594f4782a6ce8f\"\n\t],\n\t\"remove\": []\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_528a1853f66e468d804e2df80910449d"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654405675510,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_3916dda0b3f14d67bc921690e59cfb39",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654408362858,
+            "created": 1654408234152,
+            "url": "http://localhost:8000/courses/ { id } /roster",
+            "name": "[TO DO] Get course roster",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654405675460,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_63efb5b0f20847be83a88fae97f9498d",
+            "parentId": "fld_ed80aa2ee1444be09a564cfd8f1b08bb",
+            "modified": 1654408381444,
+            "created": 1654408376093,
+            "url": "http://localhost:8000/courses/ { id } /assignments",
+            "name": "[TO DO] Get course assignments",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654404774065,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_af678f583fbe4baea4218a16c8bb8190",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654411330194,
+            "created": 1654408440407,
+            "url": "http://localhost:8000/assignments",
+            "name": "Create assignment",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"courseId\": \"629c4f20f9594f4782a6ce86\",\n\t\"title\": \"Assignment 1\",\n\t\"points\": \"150\",\n\t\"dueDate\": \"Sat Jun 10 2022 23:59:59 GMT-0700 (Pacific Daylight Time)\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_2a113260aee34a48a14a19bf7c9057d1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654408440407,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654408404937,
+            "created": 1654408402743,
+            "name": "Assignments",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1654405497773,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_71fdc9ead5034fae958500e77565eb6b",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654411275103,
+            "created": 1654408511826,
+            "url": "http://localhost:8000/assignments/629c4f9307cdaf2e30d7ba18",
+            "name": "Get assignment info",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654407058133.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_901a1323909341f683b613ea64a98bd3",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654411387826,
+            "created": 1654408555844,
+            "url": "http://localhost:8000/assignments/629c4f9307cdaf2e30d7ba18",
+            "name": "Update assignment",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"courseId\": \"629c4f20f9594f4782a6ce86\",\n\t\"title\": \"Assignment 1\",\n\t\"points\": \"150\",\n\t\"dueDate\": \"Sat Jun 13 2022 23:59:59 GMT-0700 (Pacific Daylight Time)\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_1b14090b86c34672a80f6c9527f75e08"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654406366996.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b461538246e443389dd26a9815ef653a",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654411392757,
+            "created": 1654408617916,
+            "url": "http://localhost:8000/assignments/629c4f9307cdaf2e30d7ba18",
+            "name": "Delete assignment",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBRE1JTkBBRE1JTi5jb20iLCJpYXQiOjE2NTQ0MDQ1MDMsImV4cCI6MTY1NDQ5MDkwM30.D4hC9zn3kTtu9EW8xs-qmuy334dudbCDZoH5A5EMUls"
+            },
+            "metaSortKey": -1654406021428.375,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cfed7ee758674299a9acb3d0e1515fea",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654408682229,
+            "created": 1654408669426,
+            "url": "http://localhost:8000/assignments/ { id } /submissions",
+            "name": "[TO DO] Get assignment submissions",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654405848644.1875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e5b1723bb88843939b3f9d7ecc33bc2d",
+            "parentId": "fld_72859fcb98dd41748769d77b9cd607b3",
+            "modified": 1654408739861,
+            "created": 1654408735339,
+            "url": "http://localhost:8000/assignments/ { id } /submissions",
+            "name": "[TO DO] Create assignment submission",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1654405762252.0938,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_01d11b6ad6f0f9e2e3eae97e79b3719fa2d181fc",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654408773090,
+            "created": 1654372150171,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": {},
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1654372150171,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_01d11b6ad6f0f9e2e3eae97e79b3719fa2d181fc",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654372150174,
+            "created": 1654372150174,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_78bb22aba53f4d9280985f70da88a806",
+            "parentId": "wrk_582730a35e7149b684eb7539935c56f8",
+            "modified": 1654372150156,
+            "created": 1654372150156,
+            "fileName": "Final",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}

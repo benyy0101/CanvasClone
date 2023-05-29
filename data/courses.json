@@ -1,0 +1,51 @@
+[
+    {
+        "subject": "CS",
+        "number": "161",
+        "title": "Into to CS I",
+        "term": "fa22",
+        "instructorId": 0
+    },
+    {
+        "subject": "CS",
+        "number": "162",
+        "title": "Into to CS II",
+        "term": "wi23",
+        "instructorId": 0
+    },
+    {
+        "subject": "CS",
+        "number": "195",
+        "title": "Website Design",
+        "term": "wi23",
+        "instructorId": 1
+    },
+    {
+        "subject": "CS",
+        "number": "261",
+        "title": "Data Structures",
+        "term": "Fa22",
+        "instructorId": 3
+    },
+    {
+        "subject": "CS",
+        "number": "290",
+        "title": "Web Development",
+        "term": "sp23",
+        "instructorId": 1
+    },
+    {
+        "subject": "CS",
+        "number": "261",
+        "title": "Data Structures",
+        "term": "fa22",
+        "instructorId": 4
+    },
+    {
+        "subject": "CS",
+        "number": "312",
+        "title": "System Administration",
+        "term": "wi23",
+        "instructorId": 4
+    }
+]

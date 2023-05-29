@@ -1,0 +1,56 @@
+[
+    {
+        "name": "John Doe",
+        "email": "doej@oregonstate.edu",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "name": "Keanu Reeves",
+        "email": "reek@oregonstate.edu",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "name": "Camera Guy #1",
+        "email": "guyc@oregonstate.edu",
+        "password": "hunter2",
+        "role": "admin"
+    },
+    {
+        "name": "Dark Helmet",
+        "email": "held@oregonstate.edu",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "name": "Yogurt",
+        "email": "gurt@oregonstate.edu",
+        "password": "hunter2",
+        "role": "instructor"
+    },
+    {
+        "name": "Egon Spengler",
+        "email": "spee@oregonstate.edu",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "name": "Peter Venkman",
+        "email": "venp@oregonstate.edu",
+        "password": "hunter2",
+        "role": "student"
+    },
+    {
+        "name": "Zuul",
+        "email": "zuul@oregonstate.edu",
+        "password": "hunter2",
+        "role": "admin"
+    },
+    {
+        "name": "Wilson the Volleyball",
+        "email": "volw@oregonstate.edu",
+        "password": "hunter2",
+        "role": "student"
+    }
+]
